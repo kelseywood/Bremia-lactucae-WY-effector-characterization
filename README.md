@@ -5,4 +5,4 @@
 Kelsey Wood, Munir Nur, Juliana Gil, Kyle Fletcher, Kim Lakeman, Ayumi Gothberg, Tina Khuu, Jennifer Kopetzky, Archana Pandya, Mathieu Pel, Richard Michelmore
 
 
-#
+This repository contains scripts to analyze oomycete genomes for WY effector prediction and characterization, specifically focusing on the causal agent of lettuce downy mildew, *Bremia lactucae*.
