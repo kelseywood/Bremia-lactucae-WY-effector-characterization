@@ -7,7 +7,7 @@
 *Kelsey Wood, Munir Nur, Juliana Gil, Kyle Fletcher, Kim Lakeman, Ayumi Gothberg, Tina Khuu, Jennifer Kopetzky, Archana Pandya, Mathieu Pel, Richard Michelmore*
 
 
-### [Supplemental motif table with Species, GeneID, sequence, various motif presences](https://github.com/mjnur/Bremia-lactucae-WY-effector-characterization/blob/master/motif_counting/20200805_Supplemental_motif_category_table.csv)
+### [Supplemental motif table with all secreted genes, annotated with GeneID, sequence, species, and RXLR/EER/WY motif presence](https://github.com/mjnur/Bremia-lactucae-WY-effector-characterization/blob/master/motif_counting/20200805_Supplemental_motif_category_table.csv)
 
 Notes on the pipeline: 
   - RXLR string searches were done on non-redundant secretomes with cleaved sequences, yes the CSV above contains the full sequences for completeness. 
