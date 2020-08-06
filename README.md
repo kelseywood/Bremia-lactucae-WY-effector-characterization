@@ -9,4 +9,6 @@
 
 ### [Supplemental motif table with Species, GeneID, sequence, various motif presences](https://github.com/mjnur/Bremia-lactucae-WY-effector-characterization/blob/master/motif_counting/20200805_Supplemental_motif_category_table.csv)
 
-(Note that the various RXLR string searches were done on non-redundant secretomes with cleaved sequences, but the CSV contains the full sequence. Proteomes were made non-redundant using CD-HIT, and cleaved using SignalP 4.1, on sensitive mode)
+Notes on the pipeline: 
+  - RXLR string searches were done on non-redundant secretomes with cleaved sequences, yes the CSV above contains the full sequences for completeness. 
+  - The [ORFs](https://github.com/mjnur/Bremia-lactucae-WY-effector-characterization/tree/master/ORFs) folder contains the starting sequences of our pipeline, which were used as input to SignalP v4.1 (sensitive mode) to acquire secretomes and cleaved sequences and CD-HIT to reduce sequence redundancy
