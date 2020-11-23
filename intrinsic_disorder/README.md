@@ -19,4 +19,4 @@
 		
 	2. read+parse the textfile with R and plot results
 	
-	there are example R files available in this directory, the most barebones one is **read_disorder.R**, which reads+parses in example.out and plots a line graph of positional averages of all sequences' disorder series, and limits it to the first 150 AA positions.
+	there are example R files available in this directory, the most barebones one is **read_disorder.R**, which reads+parses in example.out and plots a line graph of positional averages of all sequences' disorder series, and limits it to the first 150 AA positions. you can run this in RStudio, line by line and see the data turn into a nice figure!
