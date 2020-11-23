@@ -9,7 +9,9 @@
 
 - usage: 
 
-	1. run VSL2 PONDR file to get the raw output into a textfile 
+	1. run VSL2 PONDR file to get the raw output into a textfile. 
+	
+	**Note**: this **run_pondr.sh** reformats the fasta file to be a single line fasta file (each sequence string is in a single line and doesn't span multiple lines), and the script also removes the '*' characters. these are requirements by VSL2, and you can see the formatted fasta file in the same directory with the '_formatted' suffix
 	
 		example usage: bash run_pondr.sh (Input fasta file) (Output text file)
 		
