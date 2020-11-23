@@ -13,11 +13,9 @@
 	
 	**Note**: In the background, this **run_pondr.sh** script reformats the fasta file to be a single line fasta file (each sequence string is in a single line and doesn't span multiple lines), and the script also removes the '*' characters. these are requirements by VSL2, and you can see the resulting formatted fasta file in the same directory with the '_formatted' suffix if you want to.
 	
-		example usage: bash run_pondr.sh (Input fasta file) (Output text file)
+	example usage: bash run_pondr.sh (Input fasta file) (Output text file)
 		
-		```bash
 		bash run_pondr.sh example.fasta example.out
-		```
 		
 	2. read in the textfile with R and plot results
 	
