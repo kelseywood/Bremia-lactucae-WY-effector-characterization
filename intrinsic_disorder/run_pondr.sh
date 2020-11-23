@@ -12,6 +12,10 @@
 
 input_proteins="$1"
 output_results="$2"
+
+awk '!/^>/ { printf "%s", $0; n = "\n" } /^>/ { print n $0;n = "" } END { printf "%s", n }' $input_proteins > ${input_proteins}_formatted
+sed -iE 's/*//g' ${input_proteins}_formatted
+
 num_proteins=$(grep -c ">" $input_proteins)
 
 
@@ -25,7 +29,7 @@ do
     gene_file_pos=$(( 2 * $gene ))
 
     #put gene in temp file
-    sed -n -e ${gene_file_pos}p $input_proteins > tempGene
+    sed -n -e ${gene_file_pos}p ${input_proteins}_formatted > tempGene
 
     #run PONDR, get raw results in tempResults
     java -jar VSL2.jar -s:tempGene > tempResults
@@ -40,3 +44,4 @@ done
 
 rm tempGene*
 rm tempResults*
+rm ${input_proteins}_formattedE
