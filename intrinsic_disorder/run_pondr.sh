@@ -8,6 +8,12 @@
 #
 #PONDR only runs 1 AA seq at a time,
 #    PONDR doesn't allow any  special chars (*) or fasta headers
+usage(){
+	echo "Usage: bash run_pondr.sh <input fasta file> <output text file>"
+	exit 1
+}
+
+[[ $# -ne 2 ]] && usage
 
 
 input_proteins="$1"
@@ -19,7 +25,7 @@ sed -iE 's/*//g' ${input_proteins}_formatted
 num_proteins=$(grep -c ">" $input_proteins)
 
 
-rm -f -- $output_results && touch $output_results
+rm -f -- $output_results 
 
 for (( gene=1; gene <= num_proteins; ((gene++)) ))
 do
