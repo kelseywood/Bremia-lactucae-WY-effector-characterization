@@ -2,7 +2,7 @@
 #motif_redo_201810/results_20181015/EffectR_results_NR_cleaved_secretomes.txt", stringsAsFactors = F)
 #setwd("~/mnt/CLUSTER/effectR/motif_redo_201810/results_20190123/")
 setwd("/share/rwmwork/mjnur/effectR/motif_redo_201810/results_20190123")
-DF <- read.csv("EffectR_results_NR_cleaved.txt", stringsAsFactors = F)
+DF <- read.csv("Effector_results_NR_cleaved.txt", stringsAsFactors = F)
 
 #import WY and HMM_RXLR
 WYs <- read.table("all_WY_cleaved_IDs.csv")

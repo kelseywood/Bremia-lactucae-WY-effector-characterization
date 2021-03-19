@@ -1,5 +1,4 @@
 get_motifs <- function() {
-  library(effectR)
   library(seqinr)
   
   RxLR <- "^\\w{1,56}R\\wLR"
@@ -81,7 +80,7 @@ main <- function(secretome_path) {
   normal_DF <- process_secretome(info$motifs, info$names,secretome_path)
   
   #outFile <- paste("EffectR_results_", genomeName, ".txt", sep="")
-  outFile <- "/share/rwmwork/mjnur/effectR/motif_redo_201810/results_20190123/20200604_EffectR_results_NR_cleaved.txt"
+  outFile <- "/share/rwmwork/mjnur/effectR/motif_redo_201810/results_20190123/20210319_EffectR_results_NR_cleaved.txt"
   cat("writing to outfile, " , outFile, "\n")
   
   isBremia <- grepl("lac", secretome_path)
